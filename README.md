@@ -5,7 +5,7 @@ Only local server availability yet.
 
 # RPG-Handy-Helper App
 
-This mobile application is a companion client for the [RPG-Handy-Helper backend](https://github.com/xEdziu/RPG-Handy-Helper).  
+This mobile application is a companion client for the [RPG-Handy-Helper](https://github.com/xEdziu/RPG-Handy-Helper).  
 It allows RPG players to log in, view their profile and game schedules, and perform animated 3D dice rolls.  
 All data is fetched from the backend – this version is read-only and does not allow content modification.
 
