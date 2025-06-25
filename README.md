@@ -3,8 +3,12 @@
 # BETA
 Only local server availability yet.
 
-**RPG-Handy-Helper** is a mobile application designed to support both players and game masters during tabletop RPG sessions. It allows users to authenticate, view their profile and check upcoming games, all based on data fetched from a connected backend server. 
-Also simulate animated dice rolls.
+# RPG-Handy-Helper App
+
+This mobile application is a companion client for the [RPG-Handy-Helper backend](https://github.com/xEdziu/RPG-Handy-Helper).  
+It allows RPG players to log in, view their profile and game schedules, and perform animated 3D dice rolls.  
+All data is fetched from the backend – this version is read-only and does not allow content modification.
+
 
 ## 📱 Features
 
