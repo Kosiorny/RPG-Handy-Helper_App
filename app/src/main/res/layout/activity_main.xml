@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/logo_dark"
+        app:tint="@color/accent"
+        android:contentDescription="Logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RPG Handy Helper"
+        android:textColor="@color/textPrimary"
+        android:textSize="40sp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:lineSpacingExtra="0dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Narzędzie do Twoich kampanii RPG"
+        android:textColor="@color/textSecondary"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/league_spartan_bold"
+        android:layout_marginBottom="32dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginButtonMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/jetbrains_mono"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:text="LOGIN"
+        android:textAllCaps="true"
+        android:textColor="@color/textPrimary"
+        android:textSize="18sp"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="16dp"
+        app:strokeColor="@color/accent"
+        app:strokeWidth="2dp" />
+
+    <!-- Wyloguj się -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/jetbrains_mono"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:text="Wyloguj się"
+        android:textAllCaps="true"
+        android:textColor="@color/textPrimary"
+        android:textSize="18sp"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="16dp"
+        app:strokeColor="@color/red"
+        app:strokeWidth="2dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerButtonMain"
+        android:text="REJESTRACJA"
+        android:textColor="@color/textPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:fontFamily="@font/jetbrains_mono"
+        android:textSize="18sp"
+        app:strokeColor="@color/accent"
+        app:strokeWidth="2dp"
+        app:cornerRadius="16dp"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="16dp"
+        app:backgroundTint="@android:color/transparent"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/profileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROFIL"
+        android:textColor="@color/textPrimary"
+        android:textAllCaps="true"
+        android:fontFamily="@font/jetbrains_mono"
+        android:textSize="18sp"
+        app:strokeColor="@color/accent"
+        app:strokeWidth="2dp"
+        app:cornerRadius="16dp"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="16dp"
+        app:backgroundTint="@android:color/transparent"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/diceButton"
+        android:text="KOSTKA"
+        android:textColor="@color/textPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:fontFamily="@font/jetbrains_mono"
+        android:textSize="18sp"
+        app:strokeColor="@color/accent"
+        app:strokeWidth="2dp"
+        app:cornerRadius="16dp"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="16dp"
+        app:backgroundTint="@android:color/transparent"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

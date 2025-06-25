@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@color/background">
+
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:layout_gravity="center_horizontal"
+      android:onClick="onLogoClick">
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/logo_dark"
+        app:tint="@color/accent"
+        android:contentDescription="Logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RPG Handy Helper"
+        android:textColor="@color/textPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/jetbrains_mono"
+        android:layout_marginStart="12dp" />
+  </LinearLayout>
+
+  <View
+      android:layout_width="400dp"
+      android:layout_height="1dp"
+      android:background="@color/lighter_background"
+      android:layout_marginTop="16dp"
+      android:layout_marginBottom="10dp"
+      android:layout_gravity="center_horizontal" />
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      android:layout_marginTop="8dp">
+
+    <Spinner
+        android:id="@+id/diceTypeSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:entries="@array/dice_types"
+        android:fontFamily="@font/jetbrains_mono"
+        android:textColor="@color/textPrimary"
+        android:background="@drawable/spinner_background" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kolejny rzut"
+        android:textStyle="bold"
+        android:fontFamily="@font/jetbrains_mono"
+        app:cornerRadius="10dp"
+        android:paddingHorizontal="32dp"
+        app:backgroundTint="@color/accent"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="8dp" />
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      android:layout_marginTop="8dp">
+
+    <Spinner
+        android:id="@+id/diceFaceSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:entries="@array/dice_faces"
+        android:fontFamily="@font/jetbrains_mono"
+        android:textColor="@color/textPrimary"
+        android:background="@drawable/spinner_background" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/snapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Snap to Face"
+        android:textStyle="bold"
+        android:fontFamily="@font/jetbrains_mono"
+        app:cornerRadius="10dp"
+        android:paddingHorizontal="32dp"
+        app:backgroundTint="@color/accent"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="8dp" />
+  </LinearLayout>
+
+
+
+  <SeekBar
+      android:id="@+id/diceCountSeekBar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:max="3"
+      android:thumbTint="@color/accent" />
+
+
+  <TextView
+      android:id="@+id/diceCountLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Liczba kości: 1"
+      android:layout_marginTop="4dp"
+      android:textColor="@color/textPrimary"
+      android:fontFamily="@font/jetbrains_mono" />
+
+
+  <LinearLayout
+      android:id="@+id/resultRow"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center_horizontal"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp" />
+
+
+  <FrameLayout
+      android:id="@+id/gl_container"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+    <com.example.rpgdiceapp.diceview.DiceGLSurfaceView
+        android:id="@+id/diceSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+  </FrameLayout>
+
+</LinearLayout>
+
